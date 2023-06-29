@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation">Содержание</string>
+    <!--    <string name="text_view_attributes">XML - Атрибуты</string>-->
+    <string name="text_view_attributes">XML - Атрибуты TextView</string>
+
+    <string name="allowUndo">allowUndo - Должна ли быть разрешена отмена для редактируемого текста. </string>
+    <string name="allowUndoParam">Может быть логическим значением, например " true" или " false".</string>
+
+    <string name="autoLink">autoLink - Определяет, будут ли ссылки, такие как URL-адреса и адреса электронной почты, автоматически обнаруживаться и преобразовываться в интерактивные ссылки.  </string>
+    <string name="autoLinkParam">Должен быть одним или несколькими (разделенными символом «|») из следующих постоянных значений.all	f	Match all patterns (equivalent to web|email|phone|map).
+        email	2	Match email addresses.
+        map	8	Match map addresses.
+        none	0	Match no patterns (default).
+        phone	4	Match phone numbers.
+        web	1	Match Web URLs.</string>
+
+    <string name="autoSizeMaxTextSize">autoSizeMaxTextSize - Ограничение максимального размера текста, которое будет использоваться при автоматическом изменении размера текста.  </string>
+    <string name="autoSizeMaxTextSizeParam">Может быть значением измерения, представляющим собой число с плавающей запятой, к которому добавляется единица измерения, например " 14.5sp". Доступные единицы измерения: px (пиксели), dp (пиксели, не зависящие от плотности), sp (масштабированные пиксели в зависимости от предпочтительного размера шрифта), in (дюймы) и mm (миллиметры).
+
+Связанные методы:
+
+setAutoSizeTextTypeUniformWithConfiguration(int,int,int,int)</string>
+
+    <string name="autoSizeMinTextSize">autoSizeMinTextSize - Ограничение минимального размера текста, которое будет использоваться при автоматическом изменении размера текста. </string>
+    <string name="autoSizeMinTextSizeParam">Может быть значением измерения, представляющим собой число с плавающей запятой, к которому добавляется единица измерения, например " 14.5sp". Доступные единицы измерения: px (пиксели), dp (пиксели, не зависящие от плотности), sp (масштабированные пиксели в зависимости от предпочтительного размера шрифта), in (дюймы) и mm (миллиметры).
+
+Связанные методы:
+
+setAutoSizeTextTypeUniformWithConfiguration(int,int,int,int)</string>
+
+    <string name="autoSizePresetSizes">autoSizePresetSizes - Ресурсный массив измерений, который будет использоваться в сочетании с autoSizeTextTypeустановленным значением uniform. </string>
+    <string name="autoSizePresetSizesParam">Может быть ссылкой на другой ресурс в виде " " или атрибутом темы в виде " ". @[+][package:]type/name?[package:]type/name
+
+Может быть строковым значением,
+
+Может быть целым числом, например " 100".
+
+Может быть логическим значением, например " true" или " false".
+
+Может быть значением цвета в форме " ", " ", " " или " ". #rgb#argb#rrggbb#aarrggbb
+
+Может быть значением с плавающей запятой, например " 1.2".
+
+Может быть значением измерения, представляющим собой число с плавающей запятой, к которому добавляется единица измерения, например " 14.5sp". Доступные единицы измерения: px (пиксели), dp (пиксели, не зависящие от плотности), sp (масштабированные пиксели в зависимости от предпочтительного размера шрифта), in (дюймы) и mm (миллиметры).
+
+Может быть дробным значением, представляющим собой число с плавающей запятой, к которому добавляется % или %p, например " 14.5%". Суффикс % всегда означает процент от базового размера; необязательный суффикс %p указывает размер относительно некоторого родительского контейнера.
+
+Связанные методы:
+
+setAutoSizeTextTypeUniformWithPresetSizes(int,int)</string>
+
+    <string name="autoSizeStepGranularity">autoSizeStepGranularity - Укажите размер шага авторазмера, если autoSizeTextTypeустановлено значение uniform. </string>
+    <string name="autoSizeStepGranularityParam">Может быть значением измерения, представляющим собой число с плавающей запятой, к которому добавляется единица измерения, например " 14.5sp". Доступные единицы измерения: px (пиксели), dp (пиксели, не зависящие от плотности), sp (масштабированные пиксели в зависимости от предпочтительного размера шрифта), in (дюймы) и mm (миллиметры).
+
+Связанные методы:
+
+setAutoSizeTextTypeUniformWithConfiguration(int,int,int,int)</string>
+
+
+    <string name="autoSizeTextType">autoSizeTextType - Укажите тип авторазмера. </string>
+    <string name="autoSizeTextTypeParam">Должно быть одно из следующих постоянных значений.
+        none	0	Нет автоматического изменения размера (по умолчанию).
+        uniform	1	Равномерное масштабирование размера текста по горизонтали и вертикали, чтобы оно соответствовало контейнеру. </string>
+
+    <string name="autoText">autoText - Если установлено, указывает, что этот TextView имеет текстовый метод ввода и автоматически исправляет некоторые распространенные орфографические ошибки. </string>
+    <string name="autoTextParam">aПо умолчанию "ложь".
+
+Может быть логическим значением, например " true" или " false".
+
+Связанные методы:
+
+setKeyListener(KeyListener)</string>
+
+    <string name="breakStrategy">breakStrategy - Стратегия разрыва (управление макетом абзаца). </string>
+    <string name="breakStrategyParam">balance	Стратегия разрыва строки уравновешивает длину строки.
+high quality	Разрыв строки использует высококачественную стратегию, включая переносы.
+simple	Разрыв строки использует простую стратегию.
+Связанные методы:
+setBreakStrategy(int) </string>
+
+    <string name="bufferType">bufferType - Определяет минимальный тип, который возвращает функция getText(). </string>
+    <string name="bufferTypeParam">По умолчанию "нормально". Обратите внимание, что EditText и LogTextBox всегда возвращают Editable, даже если вы укажете здесь что-то менее мощное.
+Должно быть одно из следующих постоянных значений.
+
+editable:	Может возвращать только Spannable и Editable.
+normal:	Может возвращать любую CharSequence, возможно, Spanned, если исходный текст был Spanned.
+spannable:	Может возвращать только Spannable</string>
+
+    <string name="capitalize">capitalize - Если установлено, указывает, что этот TextView имеет текстовый метод ввода и должен автоматически использовать заглавные буквы при вводе пользователем. </string>
+    <string name="capitalizeParam">Должно быть одно из следующих постоянных значений.
+characters	Делайте каждый символ заглавным.
+none	Не используйте ничего автоматически.
+sentences	Назовите первое слово каждого предложения с большой буквы.
+words	Сделайте заглавной первую букву каждого слова. </string>
+
+    <string name="cursorVisible">cursorVisible - Делает курсор видимым (по умолчанию) или невидимым. </string>
+
+    <string name="digits">digits - Если установлено, указывает, что этот TextView имеет числовой метод ввода и что эти конкретные символы являются теми, которые он будет принимать. </string>
+    <string name="drawableBottom">drawableBottom - Drawable для рисования под текстом. </string>
+    <string name="drawableEnd">drawableEnd - Drawable должен быть нарисован в конце текста. </string>
+    <string name="drawableLeft">drawableLeft - Drawable должен быть нарисован слева от текста. </string>
+    <string name="drawablePadding">drawablePadding - Отступ между чертежами и текстом. </string>
+    <string name="drawableRight">drawableRight - Drawable должен быть нарисован справа от текста. </string>
+    <string name="drawableStart">drawableStart - Drawable для рисования в начале текста. </string>
+    <string name="drawableTint">drawableTint - Оттенок для составных (слева, сверху и т. д.) рисунков. </string>
+    <string name="drawableTintMode">drawableTintMode - Режим наложения, используемый для применения составного (слева, сверху и т. д.) оттенка рисунков. </string>
+    <string name="drawableTop">drawableTop - Drawable для рисования над текстом. </string>
+    <string name="editable">editable - Если установлено, указывает, что у этого TextView есть метод ввода. </string>
+    <string name="editorExtras">editorExtras - Ссылка на input-extras ресурс XML, содержащий дополнительные данные для предоставления методу ввода, который является закрытым для реализации метода ввода. </string>
+    <string name="elegantTextHeight">elegantTextHeight - Элегантная высота текста, особенно для менее компактного сложного текста сценария. </string>
+    <string name="ellipsize">ellipsize - Если установлено, то слова, длина которых превышает ширину поля зрения, становятся эллиптическими, а не прерываются посередине. </string>
+    <string name="ems">ems - Делает TextView шириной ровно столько ems. </string>
+    <string name="enabled">enabled - Указывает, включен ли виджет. </string>
+    <string name="fallbackLineSpacing">fallbackLineSpacing - Учитывать ли восхождение и спуск резервных шрифтов, используемых при отображении текста. </string>
+    <string name="firstBaselineToTopHeight">firstBaselineToTopHeight - Расстояние от верхней части TextView до первой базовой линии текста. </string>
+    <string name="focusedSearchResultHighlightColor">focusedSearchResultHighlightColor - Цвет выделения результатов поиска в фокусе. </string>
+    <string name="fontFamily">fontFamily - Семейство шрифтов (названное строкой или ссылкой на ресурс шрифта) для текста. </string>
+    <string name="fontFeatureSettings">fontFeatureSettings - Настройки функций шрифта. </string>
+    <string name="fontVariationSettings">fontVariationSettings - Настройки вариации шрифта. </string>
+    <string name="freezesText">freezesText - Если установлено, текстовое представление будет включать текущий полный текст внутри замороженной сосульки в дополнение к метаданным, таким как текущая позиция курсора. </string>
+    <string name="gravity">gravity - Указывает, как выравнивать текст по осям X и/или Y представления, когда текст меньше, чем представление. </string>
+    <string name="height">height - Делает TextView именно такой высоты. </string>
+    <string name="hint">hint - Текст подсказки для отображения, когда текст пуст. </string>
+    <string name="hyphenationFrequency">hyphenationFrequency - Частота автоматических переносов. </string>
+    <string name="imeActionId">imeActionId - Укажите значение для используемого, когда метод ввода подключен к текстовому представлению.  EditorInfo.actionId</string>
+    <string name="imeActionLabel">imeActionLabel - Укажите значение для используемого, когда метод ввода подключен к текстовому представлению.  EditorInfo.actionLabel</string>
+    <string name="imeOptions">imeOptions - Дополнительные функции, которые можно включить в IME, связанном с редактором, для улучшения интеграции с вашим приложением. </string>
+    <string name="includeFontPadding">includeFontPadding - Оставьте достаточно места для надстрочных и подстрочных элементов вместо строгого использования подъема и спуска шрифта. </string>
+    <string name="inputMethod">inputMethod - Если установлено, указывает, что этот TextView должен использовать указанный метод ввода (указанный полным именем класса). </string>
+    <string name="inputType">inputType - Тип данных, помещаемых в текстовое поле, используемый, чтобы помочь методу ввода решить, как разрешить пользователю вводить текст. </string>
+    <string name="justificationMode">justificationMode - Режим для оправдания. </string>
+    <string name="lastBaselineToBottomHeight">lastBaselineToBottomHeight - Расстояние от нижней части TextView до последней базовой линии текста. </string>
+    <string name="letterSpacing">letterSpacing - Межбуквенный интервал в тексте.</string>
+    <string name="lineBreakStyle">lineBreakStyle - Указывает стратегии разрыва строки для переноса текста.</string>
+    <string name="lineBreakWordStyle">lineBreakWordStyle - Указывает стратегии разрыва строки для переноса текста. </string>
+    <string name="lineHeight">lineHeight - Явная высота между строками текста. </string>
+    <string name="lineSpacingExtra">lineSpacingExtra - Дополнительный интервал между строками текста. </string>
+    <string name="lineSpacingMultiplier">lineSpacingMultiplier - Дополнительный интервал между строками текста, как множитель. </string>
+    <string name="lines">lines - Делает TextView высотой ровно столько строк. </string>
+    <string name="linksClickable">linksClickable - Если установлено значение false, метод перемещения не будет установлен на метод перемещения ссылки, даже если autoLink вызывает поиск ссылок.</string>
+    <string name="marqueeRepeatLimit">marqueeRepeatLimit - Количество повторений анимации выделения. </string>
+    <string name="maxEms">maxEms - Делает TextView шириной не более этого количества ems. </string>
+    <string name="maxHeight">maxHeight - Делает TextView высотой не более этого количества пикселей. </string>
+    <string name="maxLength">maxLength - Установите входной фильтр, чтобы ограничить длину текста указанным числом. </string>
+    <string name="maxLines">maxLines - Делает TextView высотой не более этого количества строк. </string>
+    <string name="maxWidth">maxWidth - Делает TextView шириной не более этого количества пикселей. </string>
+    <string name="minEms">minEms - Делает TextView шириной как минимум столько ems. </string>
+    <string name="minHeight">minHeight - Делает TextView высотой не менее этого количества пикселей. </string>
+    <string name="minLines">minLines - Делает TextView высотой как минимум столько строк. </string>
+    <string name="minWidth">minWidth - Делает TextView шириной не менее этого количества пикселей. </string>
+    <string name="numeric">numeric - Если установлено, указывает, что этот TextView имеет числовой метод ввода. </string>
+    <string name="password">password - 	Отображаются ли символы поля в виде точек пароля вместо самих себя</string>
+    <string name="phoneNumber">phoneNumber - Если установлено, указывает, что этот TextView имеет метод ввода номера телефона.</string>
+    <string name="privateImeOptions">privateImeOptions - Дополнительное описание типа контента для метода ввода, прикрепленного к текстовому представлению, которое является частным для реализации метода ввода. </string>
+    <string name="scrollHorizontally">scrollHorizontally - Разрешено ли, чтобы текст был шире, чем вид (и, следовательно, может быть прокручен по горизонтали). </string>
+    <string name="searchResultHighlightColor">searchResultHighlightColor - 	Цвет выделения результатов поиска. </string>
+    <string name="selectAllOnFocus">selectAllOnFocus - Если текст доступен для выбора, выделите его весь, когда вид будет в фокусе. </string>
+    <string name="shadowColor">shadowColor - Поместите размытую тень текста под текст, нарисованный указанным цветом. </string>
+    <string name="shadowDx">shadowDx - Горизонтальное смещение тени текста. </string>
+    <string name="shadowDy">shadowDy - Вертикальное смещение тени текста. </string>
+    <string name="shadowRadius">shadowRadius - Радиус размытия тени текста. </string>
+    <string name="singleLine">singleLine - Ограничивает текст одной строкой с горизонтальной прокруткой вместо переноса на несколько строк и перемещает фокус вместо вставки новой строки при нажатии клавиши ввода. </string>
+    <string name="text">text - Текст для отображения. </string>
+    <string name="textAllCaps">textAllCaps - Представьте текст ЗАГЛАВНЫМИ БУКВАМИ. </string>
+    <string name="textAppearance">textAppearance - Основной цвет текста, шрифт, размер и стиль. </string>
+    <string name="textColor">textColor - Цвет текста. </string>
+    <string name="textColorHighlight">textColorHighlight - Цвет выделения текста. </string>
+    <string name="textColorHint">textColorHint - Цвет текста подсказки. </string>
+    <string name="textColorLink">textColorLink - Цвет текста для ссылок. </string>
+    <string name="textCursorDrawable">textCursorDrawable - Ссылка на рисуемый объект, который будет отображаться под курсором вставки. </string>
+    <string name="textFontWeight">textFontWeight - Вес шрифта, используемого в TextView.</string>
+    <string name="textIsSelectable">textIsSelectable - Указывает, что содержимое нередактируемого текста может быть выбрано. </string>
+    <string name="textScaleX">textScaleX - Устанавливает коэффициент масштабирования текста по горизонтали. </string>
+    <string name="textSelectHandle">textSelectHandle - Ссылка на рисуемый объект, который будет использоваться для отображения привязки выделения текста для позиционирования курсора в тексте.</string>
+    <string name="textSelectHandleLeft">textSelectHandleLeft - Ссылка на рисуемый объект, который будет использоваться для отображения привязки выделения текста в левой части области выделения. </string>
+    <string name="textSelectHandleRight">textSelectHandleRight - Ссылка на рисуемый объект, который будет использоваться для отображения привязки выделения текста в правой части области выделения. </string>
+    <string name="textSize">textSize - Размер текста. </string>
+    <string name="textStyle">textStyle - Стиль (обычный, полужирный, курсив, полужирный | курсив) для текста. </string>
+    <string name="typeface">typeface - Шрифт (обычный, без засечек, моноширинный) для текста. </string>
+    <string name="width">width - Делает TextView именно таким широким. </string>
+</resources>
