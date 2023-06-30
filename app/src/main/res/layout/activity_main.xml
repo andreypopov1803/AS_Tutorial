@@ -18,12 +18,13 @@
         android:background="@color/green"
         android:padding="10sp"
         android:textSize="30sp"
+        android:textColor="@color/black"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="29dp" />
 
     <TextView
-        android:id="@+id/link_to_textview"
+        android:id="@+id/link_to_attributes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10sp"
@@ -32,6 +33,19 @@
         android:background="@drawable/back_yellow"
         android:layout_marginStart="10sp"
         android:layout_marginEnd="10sp"
-        android:text="TextView"
+        android:text="@string/Attributes"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/link_to_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:background="@drawable/back_blue"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:text="@string/Function"
         android:textSize="20sp" />
 </LinearLayout>

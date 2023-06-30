@@ -11,10 +11,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
 
-        val linkToTextView: TextView = findViewById(R.id.link_to_textview)
+        val linkToAttributes: TextView = findViewById(R.id.link_to_attributes)
 
-        linkToTextView.setOnClickListener {
-            val intent = Intent(this, TextViewAttributesActivity::class.java)
+        linkToAttributes.setOnClickListener {
+            val intent = Intent(this, Attributes::class.java)
+            startActivity(intent)
+        }
+        overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
+
+        val linkToFunction: TextView = findViewById(R.id.link_to_function)
+
+        linkToFunction.setOnClickListener {
+            val intent = Intent(this, Functions::class.java)
             startActivity(intent)
         }
         overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);

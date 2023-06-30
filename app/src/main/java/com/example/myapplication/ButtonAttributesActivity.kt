@@ -5,13 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class TextViewAttributesActivity : AppCompatActivity() {
+class ButtonAttributesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.text_view_attributes)
-
-
-
+        setContentView(R.layout.button_attributes)
 
         val linkToBack: Button = findViewById(R.id.btn_back)
         linkToBack.setOnClickListener {

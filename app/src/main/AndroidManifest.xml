@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ButtonAttributesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsedFunctionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Functions"
+            android:exported="false" />
+        <activity
+            android:name=".Attributes"
+            android:exported="false" />
+        <activity
             android:name=".TextViewAttributesActivity"
             android:exported="false" />
         <activity
