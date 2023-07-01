@@ -29,9 +29,22 @@
                     android:background="@color/green"
                     android:gravity="center"
                     android:padding="10sp"
-                    android:text="@string/Function"
+                    android:text="@string/Methods"
                     android:textColor="@color/black"
                     android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/blue"
+
+                    android:padding="10sp"
+                    android:text="@string/method_desc"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -46,7 +59,7 @@
                     android:inputType="text"
                     android:minHeight="48dp"
                     android:padding="10sp"
-                    android:text="@string/Used"
+                    android:text="@string/method_of_activity"
                     android:textSize="20sp" />
 
             </LinearLayout>

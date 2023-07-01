@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val linkToFunction: TextView = findViewById(R.id.link_to_function)
 
         linkToFunction.setOnClickListener {
-            val intent = Intent(this, Functions::class.java)
+            val intent = Intent(this, Methods::class.java)
             startActivity(intent)
         }
         overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);

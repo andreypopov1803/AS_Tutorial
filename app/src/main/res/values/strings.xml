@@ -4,8 +4,8 @@
     <string name="Attributes">Атрибуты</string>
     <string name="TextView">TextView</string>
     <string name="Button">Button</string>
-    <string name="Function">Функции</string>
-    <string name="Used">Использованные функции</string>
+    <string name="Methods">Методы</string>
+    <string name="method_of_activity">Методы активности</string>
     
     <!--    Text for activity_text_view_attributes:-->
     <string name="text_view_attributes">XML - Атрибуты TextView</string>
@@ -108,109 +108,168 @@
     <!--    Text for activity_button_attributes:-->
     <string name="button_attributes">XML - Атрибуты Button</string>
 
-    <string name="accessibilityHeading">accessibilityHeading - Является ли это представление заголовком в целях доступности.  </string>
-    <string name="accessibilityLiveRegion">accessibilityLiveRegion - Указывает службам специальных возможностей, следует ли уведомлять пользователя об изменении этого представления.  </string>
-    <string name="accessibilityPaneTitle">accessibilityPaneTitle - Заголовок, который это представление должно представлять для специальных возможностей в виде заголовка панели.  </string>
-    <string name="accessibilityTraversalAfter">accessibilityTraversalAfter - Устанавливает идентификатор представления, после которого это представление посещается при обходе доступности.  </string>
-    <string name="accessibilityTraversalBefore">accessibilityTraversalBefore - Устанавливает идентификатор представления, перед которым это представление посещается при обходе доступности.  </string>
-    <string name="allowClickWhenDisabled">allowClickWhenDisabled - Разрешить или запретить клики в отключенном представлении.  </string>
-    <string name="alpha">alpha - альфа-свойство представления в виде значения от 0 (полностью прозрачный) до 1 (полностью непрозрачный).  </string>
-    <string name="autoHandwritingEnabled">autoHandwritingEnabled - Включено ли в этом представлении автоматическое инициирование рукописного ввода.  </string>
-    <string name="autofillHints">autofillHints - Описывает содержимое представления, чтобы служба автозаполнения могла заполнить соответствующие данные.  </string>
-    <string name="autofilledHighlight">autofilledHighlight - Drawable для рисования поверх представления, чтобы пометить его как автозаполнение </string>
-    <string name="background">background - Drawable для использования в качестве фона.  </string>
-    <string name="backgroundTint">backgroundTint - Оттенок для нанесения на фон.  </string>
-    <string name="backgroundTintMode">backgroundTintMode - Режим наложения, используемый для применения оттенка фона.  </string>
-    <string name="clickable">clickable - Определяет, реагирует ли это представление на события кликов.  </string>
-    <string name="clipToOutline">clipToOutline - Следует ли использовать Outline представления для обрезки содержимого представления.  </string>
-    <string name="contentDescription">contentDescription - Определяет текст, кратко описывающий содержимое представления.  </string>
-    <string name="contextClickable">contextClickable - Определяет, реагирует ли это представление на события щелчка контекста.  </string>
-    <string name="defaultFocusHighlightEnabled">defaultFocusHighlightEnabled - Должен ли этот вид использовать подсветку фокуса по умолчанию, когда он сфокусирован, но не определен в его фоне.  </string>
-    <string name="drawingCacheQuality">drawingCacheQuality - Определяет качество полупрозрачных кэшей чертежей.  </string>
-    <string name="duplicateParentState">duplicateParentState - Когда для этого атрибута установлено значение true, представление получает доступное для рисования состояние (сфокусировано, нажато и т. д.) от своего прямого родителя, а не от самого себя.  </string>
-    <string name="elevation">elevation - base z глубина обзора.  </string>
-    <string name="fadeScrollbars">fadeScrollbars - Определяет, исчезать ли полосы прокрутки, когда они не используются.  </string>
-    <string name="fadingEdgeLength">fadingEdgeLength - Определяет длину затухающих краев.  </string>
-    <string name="filterTouchesWhenObscured">filterTouchesWhenObscured - Указывает, следует ли фильтровать касания, когда окно представления закрыто другим видимым окном.  </string>
-    <string name="fitsSystemWindows">fitsSystemWindows - Логический внутренний атрибут для настройки макета представления на основе системных окон, таких как строка состояния.  </string>
-    <string name="focusable">focusable - Управляет тем, может ли представление принимать фокус.  </string>
-    <string name="focusableInTouchMode">focusableInTouchMode - Логическое значение, определяющее, может ли представление принимать фокус в сенсорном режиме.  </string>
-    <string name="focusedByDefault">focusedByDefault - Является ли это представление представлением с фокусом по умолчанию.  </string>
-    <string name="forceHasOverlappingRendering">forceHasOverlappingRendering - Имеет ли этот вид элементы, которые могут перекрываться при рисовании.  </string>
-    <string name="foreground">foreground - Определяет возможность рисования для рисования поверх содержимого.  </string>
-    <string name="foregroundGravity">foregroundGravity - Определяет гравитацию, применяемую к рисунку переднего плана.  </string>
-    <string name="foregroundTint">foregroundTint - Оттенок применить к переднему плану.  </string>
-    <string name="foregroundTintMode">foregroundTintMode - Режим наложения, используемый для применения оттенка переднего плана.  </string>
-    <string name="hapticFeedbackEnabled">hapticFeedbackEnabled - Логическое значение, определяющее, должна ли в представлении включаться тактильная обратная связь для таких событий, как длительные нажатия.  </string>
-    <string name="id">id - Укажите имя идентификатора для этого представления, чтобы позже получить его с помощью или .  View.findViewById()Activity.findViewById() </string>
-    <string name="importantForAccessibility">importantForAccessibility - Описывает, важно ли это представление для доступности.  </string>
-    <string name="importantForAutofill">importantForAutofill - Сообщает системе Android, следует ли включать узел представления, связанный с этим представлением, в структуру представления, используемую для автозаполнения.  </string>
-    <string name="importantForContentCapture">importantForContentCapture - Сообщает системе Android, следует ли использовать узел представления, связанный с этим представлением, для захвата контента.  </string>
-    <string name="isCredential">isCredential - Логическое значение, указывающее системе Android, что представление является учетным и связано с CredentialManager.Может быть логическим значением, например " true" или " false".  </string>
-    <string name="isScrollContainer">isScrollContainer - Установите это, если представление будет служить контейнером прокрутки, что означает, что его размер можно изменить, чтобы уменьшить его общее окно, чтобы было место для метода ввода.  </string>
-    <string name="keepScreenOn">keepScreenOn - Определяет, должно ли окно представления держать экран включенным, пока оно видимо.  </string>
-    <string name="keyboardNavigationCluster">keyboardNavigationCluster - Является ли это представление корнем кластера навигации с помощью клавиатуры.  </string>
-    <string name="layerType">layerType - Определяет тип слоя, поддерживающего этот вид.  </string>
-    <string name="layoutDirection">layoutDirection - Определяет направление рисования компоновки.  </string>
-    <string name="longClickable">longClickable - Определяет, будет ли это представление реагировать на события длинного клика.  </string>
-    <string name="minHeightButton">minHeight - Определяет минимальную высоту представления.  </string>
-    <string name="minWidthButton">minWidth - Определяет минимальную ширину представления.  </string>
-    <string name="nextClusterForward">nextClusterForward - Определяет следующий кластер навигации с помощью клавиатуры.  </string>
-    <string name="nextFocusDown">nextFocusDown - Определяет следующее представление для передачи фокуса при следующем фокусе. Если ссылка ссылается на представление, которое не существует или является частью невидимой иерархии, при доступе к ссылке будет получено .  View.FOCUS_DOWNRuntimeException </string>
-    <string name="nextFocusForward">nextFocusForward - Определяет следующее представление для передачи фокуса при следующем фокусе. Если ссылка ссылается на представление, которое не существует или является частью невидимой иерархии, при доступе к ссылке будет получено .  View.FOCUS_FORWARDRuntimeException </string>
-    <string name="nextFocusLeft">nextFocusLeft - Определяет следующее представление для передачи фокуса при следующем фокусе .  View.FOCUS_LEFT </string>
-    <string name="nextFocusRight">nextFocusRight - Определяет следующее представление для передачи фокуса при следующем фокусе. Если ссылка ссылается на представление, которое не существует или является частью невидимой иерархии, при доступе к ссылке будет получено .  View.FOCUS_RIGHTRuntimeException </string>
-    <string name="nextFocusUp">nextFocusUp - Определяет следующее представление для передачи фокуса при следующем фокусе. Если ссылка ссылается на представление, которое не существует или является частью невидимой иерархии, при доступе к ссылке будет получено .  View.FOCUS_UPRuntimeException </string>
-    <string name="onClick">onClick - Имя метода в контексте этого представления, который вызывается при щелчке представления.  </string>
-    <string name="outlineAmbientShadowColor">outlineAmbientShadowColor - Задает цвет окружающей тени, которая рисуется, когда вид имеет положительное значение Z или высоты.  </string>
-    <string name="outlineSpotShadowColor">outlineSpotShadowColor - Задает цвет точечной тени, рисуемой, когда вид имеет положительное значение Z или высоты.  </string>
-    <string name="padding">padding - Устанавливает отступ в пикселях для всех четырех краев.  </string>
-    <string name="paddingBottom">paddingBottom - Устанавливает отступ нижнего края в пикселях. </string>
-    <string name="paddingEnd">paddingEnd - Устанавливает отступ в пикселях для конечного края. </string>
-    <string name="paddingHorizontal">paddingHorizontal - Устанавливает отступ в пикселях для левого и правого краев. </string>
-    <string name="paddingLeft">paddingLeft - Устанавливает отступ в пикселях левого края. </string>
-    <string name="paddingRight">paddingRight - Устанавливает отступ правого края в пикселях. </string>
-    <string name="paddingStart">paddingStart - Устанавливает отступ в пикселях начального края. </string>
-    <string name="paddingTop">paddingTop - Устанавливает отступ в пикселях для верхнего края. </string>
-    <string name="paddingVertical">paddingVertical - Устанавливает отступ в пикселях для верхнего и нижнего краев. </string>
-    <string name="preferKeepClear">preferKeepClear - Устанавливает предпочтение, чтобы границы этого представления не попадали в плавающие окна над окном этого представления.  </string>
-    <string name="requiresFadingEdge">requiresFadingEdge - Определяет, какие края должны исчезать при прокрутке.  </string>
-    <string name="rotation">rotation - поворот вида, в градусах.  </string>
-    <string name="rotationX">rotationX - вращение вида вокруг оси x, в градусах.  </string>
-    <string name="rotationY">rotationY - вращение вида вокруг оси Y в градусах. </string>
-    <string name="saveEnabled">saveEnabled - Если false, для этого представления не будет сохранено состояние, когда оно замораживается.  </string>
-    <string name="scaleX">scaleX - масштаб вида по оси x.  </string>
-    <string name="scaleY">scaleY - масштаб вида в направлении Y.  </string>
-    <string name="screenReaderFocusable">screenReaderFocusable - Следует ли рассматривать это представление как фокусируемую единицу средствами специальных возможностей для чтения с экрана.  </string>
-    <string name="scrollIndicators">scrollIndicators - Определяет, какие индикаторы прокрутки должны отображаться, когда представление можно прокручивать.  </string>
-    <string name="scrollX">scrollX - 	Начальное горизонтальное смещение прокрутки в пикселях.  </string>
-    <string name="scrollY">scrollY - Начальное вертикальное смещение прокрутки в пикселях.  </string>
-    <string name="scrollbarAlwaysDrawHorizontalTrack">scrollbarAlwaysDrawHorizontalTrack - Определяет, должна ли всегда отображаться горизонтальная полоса прокрутки.  </string>
-    <string name="scrollbarAlwaysDrawVerticalTrack">scrollbarAlwaysDrawVerticalTrack - Определяет, должна ли всегда отображаться вертикальная полоса прокрутки.  </string>
-    <string name="scrollbarDefaultDelayBeforeFade">scrollbarDefaultDelayBeforeFade - Определяет задержку в миллисекундах, которую полоса прокрутки ожидает перед исчезновением.  </string>
-    <string name="scrollbarFadeDuration">scrollbarFadeDuration - Определяет задержку в миллисекундах, по истечении которой полоса прокрутки исчезает.  </string>
-    <string name="scrollbarSize">scrollbarSize - Устанавливает ширину вертикальных полос прокрутки и высоту горизонтальных полос прокрутки.  </string>
-    <string name="scrollbarStyle">scrollbarStyle - Управляет стилем и положением полосы прокрутки.  </string>
-    <string name="scrollbarThumbHorizontal">scrollbarThumbHorizontal - Определяет возможность рисования горизонтальной полосы прокрутки.  </string>
-    <string name="scrollbarThumbVertical">scrollbarThumbVertical - Определяет возможность рисования вертикальной полосы прокрутки.  </string>
-    <string name="scrollbarTrackHorizontal">scrollbarTrackHorizontal - Определяет отрисовываемую горизонтальную полосу прокрутки.  </string>
-    <string name="scrollbarTrackVertical">scrollbarTrackVertical - Определяет отрисовываемую вертикальную полосу прокрутки.  </string>
-    <string name="scrollbars">scrollbars - Определяет, какие полосы прокрутки должны отображаться при прокрутке или нет.  </string>
-    <string name="soundEffectsEnabled">soundEffectsEnabled - Логическое значение, определяющее, должны ли в представлении включаться звуковые эффекты для таких событий, как щелчок и прикосновение.  </string>
-    <string name="stateListAnimator">stateListAnimator - 	Задает аниматор на основе состояния для представления.  </string>
-    <string name="tag">tag - Укажите тег для этого представления, содержащий строку, которая будет извлечена позже или найдена с помощью .  View.getTag()View.findViewWithTag() </string>
-    <string name="textAlignment">textAlignment - 	Определяет выравнивание текста.  </string>
-    <string name="textDirection">textDirection - Определяет направление текста.  </string>
-    <string name="theme">theme - Задает переопределение темы для представления.  </string>
-    <string name="tooltipText">tooltipText - Определяет текст, отображаемый в небольшом всплывающем окне при наведении или длительном нажатии.  </string>
-    <string name="transformPivotX">transformPivotX - x расположение точки поворота, вокруг которой вид будет вращаться и масштабироваться.  </string>
-    <string name="transformPivotY">transformPivotY - y расположение точки поворота, вокруг которой вид будет вращаться и масштабироваться.  </string>
+    <string name="accessibilityHeading">            accessibilityHeading - Является ли это представление заголовком в целях доступности.  </string>
+    <string name="accessibilityLiveRegion">         accessibilityLiveRegion - Указывает службам специальных возможностей, следует ли уведомлять пользователя об изменении этого представления.  </string>
+    <string name="accessibilityPaneTitle">          accessibilityPaneTitle - Заголовок, который это представление должно представлять для специальных возможностей в виде заголовка панели.  </string>
+    <string name="accessibilityTraversalAfter">             accessibilityTraversalAfter - Устанавливает идентификатор представления, после которого это представление посещается при обходе доступности.  </string>
+    <string name="accessibilityTraversalBefore">            accessibilityTraversalBefore - Устанавливает идентификатор представления, перед которым это представление посещается при обходе доступности.  </string>
+    <string name="allowClickWhenDisabled">          allowClickWhenDisabled - Разрешить или запретить клики в отключенном представлении.  </string>
+    <string name="alpha">           alpha - альфа-свойство представления в виде значения от 0 (полностью прозрачный) до 1 (полностью непрозрачный).  </string>
+    <string name="autoHandwritingEnabled">          autoHandwritingEnabled - Включено ли в этом представлении автоматическое инициирование рукописного ввода.  </string>
+    <string name="autofillHints">           autofillHints - Описывает содержимое представления, чтобы служба автозаполнения могла заполнить соответствующие данные.  </string>
+    <string name="autofilledHighlight">             autofilledHighlight - Drawable для рисования поверх представления, чтобы пометить его как автозаполнение </string>
+    <string name="background">          background - Drawable для использования в качестве фона.  </string>
+    <string name="backgroundTint">              backgroundTint - Оттенок для нанесения на фон.  </string>
+    <string name="backgroundTintMode">          backgroundTintMode - Режим наложения, используемый для применения оттенка фона.  </string>
+    <string name="clickable">           clickable - Определяет, реагирует ли это представление на события кликов.  </string>
+    <string name="clipToOutline">           clipToOutline - Следует ли использовать Outline представления для обрезки содержимого представления.  </string>
+    <string name="contentDescription">          contentDescription - Определяет текст, кратко описывающий содержимое представления.  </string>
+    <string name="contextClickable">            contextClickable - Определяет, реагирует ли это представление на события щелчка контекста.  </string>
+    <string name="defaultFocusHighlightEnabled">            defaultFocusHighlightEnabled - Должен ли этот вид использовать подсветку фокуса по умолчанию, когда он сфокусирован, но не определен в его фоне.  </string>
+    <string name="drawingCacheQuality">         drawingCacheQuality - Определяет качество полупрозрачных кэшей чертежей.  </string>
+    <string name="duplicateParentState">            duplicateParentState - Когда для этого атрибута установлено значение true, представление получает доступное для рисования состояние (сфокусировано, нажато и т. д.) от своего прямого родителя, а не от самого себя.  </string>
+    <string name="elevation">           elevation - base z глубина обзора.  </string>
+    <string name="fadeScrollbars">          fadeScrollbars - Определяет, исчезать ли полосы прокрутки, когда они не используются.  </string>
+    <string name="fadingEdgeLength">            fadingEdgeLength - Определяет длину затухающих краев.  </string>
+    <string name="filterTouchesWhenObscured">           filterTouchesWhenObscured - Указывает, следует ли фильтровать касания, когда окно представления закрыто другим видимым окном.  </string>
+    <string name="fitsSystemWindows">           fitsSystemWindows - Логический внутренний атрибут для настройки макета представления на основе системных окон, таких как строка состояния.  </string>
+    <string name="focusable">           focusable - Управляет тем, может ли представление принимать фокус.  </string>
+    <string name="focusableInTouchMode">            focusableInTouchMode - Логическое значение, определяющее, может ли представление принимать фокус в сенсорном режиме.  </string>
+    <string name="focusedByDefault">            focusedByDefault - Является ли это представление представлением с фокусом по умолчанию.  </string>
+    <string name="forceHasOverlappingRendering">            forceHasOverlappingRendering - Имеет ли этот вид элементы, которые могут перекрываться при рисовании.  </string>
+    <string name="foreground">          foreground - Определяет возможность рисования для рисования поверх содержимого.  </string>
+    <string name="foregroundGravity">           foregroundGravity - Определяет гравитацию, применяемую к рисунку переднего плана.  </string>
+    <string name="foregroundTint">          foregroundTint - Оттенок применить к переднему плану.  </string>
+    <string name="foregroundTintMode">          foregroundTintMode - Режим наложения, используемый для применения оттенка переднего плана.  </string>
+    <string name="hapticFeedbackEnabled">           hapticFeedbackEnabled - Логическое значение, определяющее, должна ли в представлении включаться тактильная обратная связь для таких событий, как длительные нажатия.  </string>
+    <string name="id">          id - Укажите имя идентификатора для этого представления, чтобы позже получить его с помощью или .  View.findViewById()Activity.findViewById() </string>
+    <string name="importantForAccessibility">           importantForAccessibility - Описывает, важно ли это представление для доступности.  </string>
+    <string name="importantForAutofill">            importantForAutofill - Сообщает системе Android, следует ли включать узел представления, связанный с этим представлением, в структуру представления, используемую для автозаполнения.  </string>
+    <string name="importantForContentCapture">          importantForContentCapture - Сообщает системе Android, следует ли использовать узел представления, связанный с этим представлением, для захвата контента.  </string>
+    <string name="isCredential">            isCredential - Логическое значение, указывающее системе Android, что представление является учетным и связано с CredentialManager.Может быть логическим значением, например " true" или " false".  </string>
+    <string name="isScrollContainer">           isScrollContainer - Установите это, если представление будет служить контейнером прокрутки, что означает, что его размер можно изменить, чтобы уменьшить его общее окно, чтобы было место для метода ввода.  </string>
+    <string name="keepScreenOn">            keepScreenOn - Определяет, должно ли окно представления держать экран включенным, пока оно видимо.  </string>
+    <string name="keyboardNavigationCluster">           keyboardNavigationCluster - Является ли это представление корнем кластера навигации с помощью клавиатуры.  </string>
+    <string name="layerType">           layerType - Определяет тип слоя, поддерживающего этот вид.  </string>
+    <string name="layoutDirection">         layoutDirection - Определяет направление рисования компоновки.  </string>
+    <string name="longClickable">           longClickable - Определяет, будет ли это представление реагировать на события длинного клика.  </string>
+    <string name="minHeightButton">         minHeight - Определяет минимальную высоту представления.  </string>
+    <string name="minWidthButton">          minWidth - Определяет минимальную ширину представления.  </string>
+    <string name="nextClusterForward">          nextClusterForward - Определяет следующий кластер навигации с помощью клавиатуры.  </string>
+    <string name="nextFocusDown">           nextFocusDown - Определяет следующее представление для передачи фокуса при следующем фокусе. Если ссылка ссылается на представление, которое не существует или является частью невидимой иерархии, при доступе к ссылке будет получено .  View.FOCUS_DOWNRuntimeException </string>
+    <string name="nextFocusForward">            nextFocusForward - Определяет следующее представление для передачи фокуса при следующем фокусе. Если ссылка ссылается на представление, которое не существует или является частью невидимой иерархии, при доступе к ссылке будет получено .  View.FOCUS_FORWARDRuntimeException </string>
+    <string name="nextFocusLeft">           nextFocusLeft - Определяет следующее представление для передачи фокуса при следующем фокусе .  View.FOCUS_LEFT </string>
+    <string name="nextFocusRight">          nextFocusRight - Определяет следующее представление для передачи фокуса при следующем фокусе. Если ссылка ссылается на представление, которое не существует или является частью невидимой иерархии, при доступе к ссылке будет получено .  View.FOCUS_RIGHTRuntimeException </string>
+    <string name="nextFocusUp">         nextFocusUp - Определяет следующее представление для передачи фокуса при следующем фокусе. Если ссылка ссылается на представление, которое не существует или является частью невидимой иерархии, при доступе к ссылке будет получено .  View.FOCUS_UPRuntimeException </string>
+    <string name="onClick">         onClick - Имя метода в контексте этого представления, который вызывается при щелчке представления.  </string>
+    <string name="outlineAmbientShadowColor">           outlineAmbientShadowColor - Задает цвет окружающей тени, которая рисуется, когда вид имеет положительное значение Z или высоты.  </string>
+    <string name="outlineSpotShadowColor">          outlineSpotShadowColor - Задает цвет точечной тени, рисуемой, когда вид имеет положительное значение Z или высоты.  </string>
+    <string name="padding">         padding - Устанавливает отступ в пикселях для всех четырех краев.  </string>
+    <string name="paddingBottom">           paddingBottom - Устанавливает отступ нижнего края в пикселях. </string>
+    <string name="paddingEnd">          paddingEnd - Устанавливает отступ в пикселях для конечного края. </string>
+    <string name="paddingHorizontal">           paddingHorizontal - Устанавливает отступ в пикселях для левого и правого краев. </string>
+    <string name="paddingLeft">         paddingLeft - Устанавливает отступ в пикселях левого края. </string>
+    <string name="paddingRight">            paddingRight - Устанавливает отступ правого края в пикселях. </string>
+    <string name="paddingStart">            paddingStart - Устанавливает отступ в пикселях начального края. </string>
+    <string name="paddingTop">          paddingTop - Устанавливает отступ в пикселях для верхнего края. </string>
+    <string name="paddingVertical">         paddingVertical - Устанавливает отступ в пикселях для верхнего и нижнего краев. </string>
+    <string name="preferKeepClear">         preferKeepClear - Устанавливает предпочтение, чтобы границы этого представления не попадали в плавающие окна над окном этого представления.  </string>
+    <string name="requiresFadingEdge">          requiresFadingEdge - Определяет, какие края должны исчезать при прокрутке.  </string>
+    <string name="rotation">            rotation - поворот вида, в градусах.  </string>
+    <string name="rotationX">           rotationX - вращение вида вокруг оси x, в градусах.  </string>
+    <string name="rotationY">           rotationY - вращение вида вокруг оси Y в градусах. </string>
+    <string name="saveEnabled">         saveEnabled - Если false, для этого представления не будет сохранено состояние, когда оно замораживается.  </string>
+    <string name="scaleX">          scaleX - масштаб вида по оси x.  </string>
+    <string name="scaleY">          scaleY - масштаб вида в направлении Y.  </string>
+    <string name="screenReaderFocusable">           screenReaderFocusable - Следует ли рассматривать это представление как фокусируемую единицу средствами специальных возможностей для чтения с экрана.  </string>
+    <string name="scrollIndicators">            scrollIndicators - Определяет, какие индикаторы прокрутки должны отображаться, когда представление можно прокручивать.  </string>
+    <string name="scrollX">         scrollX - 	Начальное горизонтальное смещение прокрутки в пикселях.  </string>
+    <string name="scrollY">         scrollY - Начальное вертикальное смещение прокрутки в пикселях.  </string>
+    <string name="scrollbarAlwaysDrawHorizontalTrack">          scrollbarAlwaysDrawHorizontalTrack - Определяет, должна ли всегда отображаться горизонтальная полоса прокрутки.  </string>
+    <string name="scrollbarAlwaysDrawVerticalTrack">            scrollbarAlwaysDrawVerticalTrack - Определяет, должна ли всегда отображаться вертикальная полоса прокрутки.  </string>
+    <string name="scrollbarDefaultDelayBeforeFade">          scrollbarDefaultDelayBeforeFade - Определяет задержку в миллисекундах, которую полоса прокрутки ожидает перед исчезновением.  </string>
+    <string name="scrollbarFadeDuration">           scrollbarFadeDuration - Определяет задержку в миллисекундах, по истечении которой полоса прокрутки исчезает.  </string>
+    <string name="scrollbarSize">           scrollbarSize - Устанавливает ширину вертикальных полос прокрутки и высоту горизонтальных полос прокрутки.  </string>
+    <string name="scrollbarStyle">          scrollbarStyle - Управляет стилем и положением полосы прокрутки.  </string>
+    <string name="scrollbarThumbHorizontal">            scrollbarThumbHorizontal - Определяет возможность рисования горизонтальной полосы прокрутки.  </string>
+    <string name="scrollbarThumbVertical">          scrollbarThumbVertical - Определяет возможность рисования вертикальной полосы прокрутки.  </string>
+    <string name="scrollbarTrackHorizontal">        scrollbarTrackHorizontal - Определяет отрисовываемую горизонтальную полосу прокрутки.  </string>
+    <string name="scrollbarTrackVertical">          scrollbarTrackVertical - Определяет отрисовываемую вертикальную полосу прокрутки.  </string>
+    <string name="scrollbars">          scrollbars - Определяет, какие полосы прокрутки должны отображаться при прокрутке или нет.  </string>
+    <string name="soundEffectsEnabled">         soundEffectsEnabled - Логическое значение, определяющее, должны ли в представлении включаться звуковые эффекты для таких событий, как щелчок и прикосновение.  </string>
+    <string name="stateListAnimator">           stateListAnimator - 	Задает аниматор на основе состояния для представления.  </string>
+    <string name="tag">            tag - Укажите тег для этого представления, содержащий строку, которая будет извлечена позже или найдена с помощью .  View.getTag()View.findViewWithTag() </string>
+    <string name="textAlignment">           textAlignment - 	Определяет выравнивание текста.  </string>
+    <string name="textDirection">           textDirection - Определяет направление текста.  </string>
+    <string name="theme">           theme - Задает переопределение темы для представления.  </string>
+    <string name="tooltipText">         tooltipText - Определяет текст, отображаемый в небольшом всплывающем окне при наведении или длительном нажатии.  </string>
+    <string name="transformPivotX">         transformPivotX - x расположение точки поворота, вокруг которой вид будет вращаться и масштабироваться.  </string>
+    <string name="transformPivotY">         transformPivotY - y расположение точки поворота, вокруг которой вид будет вращаться и масштабироваться.  </string>
+    <string name="transitionName">          transitionName - Называет представление таким образом, чтобы его можно было идентифицировать для переходов </string>
+    <string name="translationX">            translationX - перевод в x представления.  </string>
+    <string name="translationY">            translationY - 	перевод в y зрения.  </string>
+    <string name="translationZ">            translationZ - перевод в z зрения.  </string>
+    <string name="visibility">          visibility - Управляет начальной видимостью представления.  </string>
 
-    <string name="transitionName">transitionName - Называет представление таким образом, чтобы его можно было идентифицировать для переходов </string>
-    <string name="translationX">translationX - перевод в x представления.  </string>
-    <string name="translationY">translationY - 	перевод в y зрения.  </string>
-    <string name="translationZ">translationZ - перевод в z зрения.  </string>
-    <string name="visibility">visibility - Управляет начальной видимостью представления.  </string>
 
+<!--before strings for methods group-->
+
+    <string name="method_desc">         Чтобы сгенерировать метод в Android Studio, щёлкните правой кнопкой мыши в области исходного кода и в контекстном меню выберите команду Generate... (Alt+Insert) | Override Methods…. В появившемся диалоговом окне отображаются методы, которые могут быть переопределены или реализованы в классе. Либо можете набирать первые символы нужного метода, используя автодополнение.</string>
+
+    <string name="addContentView">Метод addContentView() добавляет компонент к уже существующей разметке. </string>
+    <string name="findViewById">Метод findViewById() позволяет получить ссылку на View, которая размещена в разметке через его идентификатор. Если вы используете фрагменты, то когда они загружаются в активность, то компоненты, входящие в состав фрагмента, становятся частью иерархии активности. И вы можете использовать метод findViewById() для получения ссылки к компоненту фрагмента. Не путать с одноимённым методом для класса View.</string>
+    <string name="finish">C помощью метода finish() можно завершить работу активности. Если приложение состоит из одной активности, то этого делать не следует, так как система сама завершит работу приложения. Если же приложение содержит несколько активностей, между которыми нужно переключаться, то данный метод позволяет экономить ресурсы.</string>
+    <string name="getFragmentManager">getFragmentManager. Каждая активность включает в себя Менеджер фрагментов для управления фрагментами, если они используются. Метод getFragmentManager() позволяет получить доступ к данному менеджеру. На сайте есть отдельные статьи, посвящённые фрагментам.</string>
+    <string name="getParentActivityIntent">getParentActivityIntent. Возвращает намерение, которое может запускать активность, являющей родительской. Родительская активность прописывается в манифесте. Вы можете переопределить данное намерение для своих целей. Метод появился в API 16.</string>
+    <string name="onActivityResult">onActivityResult. Дочерняя активность может произвольно возвратить назад объект Intent, содержащий любые дополнительные данные. Вся эта информация в родительской активности появляется через метод обратного вызова Activity.onActivityResult(), наряду с идентификатором, который она первоначально предоставила.
+
+Если дочерняя активность завершится неудачно или будет закрыта пользователем без подтверждения ввода через кнопку Back, то родительская активность получит результат с кодом RESULT_CANCELED.
+
+Метод принимает несколько параметров:
+
+Код запроса - тот код, который использовался для запуска дочерней активности, возвращающий результат.
+Результирующий код - код результата, поступающий от дочерней активности, как правило, RESULT_OK или RESULT_CANCELED
+Данные - намерение может включать в себя различные данные в виде параметра extras внутри намерения.</string>
+    <string name="onBackPressed">onBackPressed. Метод, позволяющий отследить нажатие на кнопку Back.</string>
+    <string name="onConfigurationChanged">onConfigurationChanged. Метод, который вызывается при изменении конфигурации устройства. Если в манифесте были установлены специальные параметры у атрибута android:configChanges, то данный метод не будет вызван.</string>
+    <string name="onKeyShortcut">onKeyShortcut. Смотри Горячие клавиши в меню</string>
+    <string name="onPostCreate">onPostCreate. Новый метод, который появился в API 21. Он вызывается позже onCreate() и в нём можно получить значения размеров компонентов, которые недоступны при построении интерфейса в методе onCreate().</string>
+    <string name="overridePendingTransition">Метод overridePendingTransition() позволяет задать анимацию при переходе от одной активности к другой. Пример смотрите здесь.</string>
+    <string name="onRestoreInstanceState">У метода onRestoreInstanceState() есть такой же параметр Bundle, как у onCreate(), и вы можете восстанавливать сохранённые значения из метода onSaveInstanceState(). Во многих случаях это пример личных предпочтений, какой из двух методов использовать для восстановления данных.
+
+Метод вызывается после метода onStart(). Система вызывает метод onRestoreInstanceState() только в том случае, если имеются сохранённые данные для восстановления.</string>
+    <string name="onSaveInstanceState">onSaveInstanceState. Когда система завершает активность в принудительном порядке, чтобы освободить ресурсы для других приложений, пользователь может снова вызвать эту активность с сохранённым предыдущим состоянием. Чтобы зафиксировать состояние активности перед её уничтожением, в классе активности необходимо реализовать метод onSaveinstancestate().
+
+Сам метод вызывается прямо перед методом onPause(). Он предоставляет возможность сохранять состояние пользовательского интерфейса активности в объект Bundle, который потом будет передаваться в методы onCreate() и onRestoreInstanceState(). В объект Bundle можно записать параметры, динамическое состояние активности как пары "ключ-значение". Когда активность будет снова вызвана, объект Bundle передаётся системой в качестве параметра в методы onCreate() и onRestoreInstanceState(), которые вызываются после onStart(), чтобы один из них или они оба могли установить активность в предыдущее состояние. Прежде чем передавать изменённый параметр Bundle в обработчик родительского класса, сохраните значения с помощью методов putXXX() и восстановите с помощью getXXX().
+
+Используйте обработчик onSaveInstanceState() для сохранения состояния интерфейса (например, состояния флажков, текущего выделенного элемента или введённых, но не сохранённых данных), чтобы объект Activity при следующем входе в активное состояние мог вывести на экран тот же UI. Рассчитывайте, что перед завершением работы процесса во время активного состояния будут вызваны обработчики onSaveInstanceState и onPause.
+
+В отличие от базовых методов, методы onSaveInstanceState() и onRestoreInstanceState() не относятся к методам жизненного цикла активности. Система будет вызывать их не во всех случаях. Например, Android вызывает onSaveinstancestate() прежде, чем активность становится уязвимой к уничтожению системой, но не вызывает его, когда экземпляр активности разрушается пользовательским действием (при нажатии клавиши BACK). В этом случае нет никаких причин для сохранения состояния активности.
+
+Метод onSaveInstanceState() вызывается системой в случае изменения конфигурации устройства в процессе выполнения приложения (например, при вращении устройства пользователем или выдвижении физической клавиатуры устройства.
+
+Поскольку метод onSaveinstanceState() вызывается не во всех случаях, его необходимо использовать только для сохранения промежуточного состояния активности. Для сохранения данных лучше использовать метод onPause().
+Помните, что обработчик onSaveInstanceState() вызывается только тогда, когда активность переходит в пассивное состояние, а не когда она закрывается при вызове метода finish() или пользователь нажимает кнопку Назад.</string>
+    <string name="onUserLeaveHint">onUserLeaveHint. Позволяет отследить нажатие кнопки Home
+
+
+@Override
+protected void onUserLeaveHint() {
+    Toast toast = Toast.makeText(getApplicationContext(), "Нажата кнопка HOME", Toast.LENGTH_SHORT);
+    toast.show();
+    super.onUserLeaveHint();
+}</string>
+    <string name="requestWindowFeature">requestWindowFeature Метод позволяет задействовать дополнительные возможности для активности, например, выводить экран активности без заголовка.</string>
+    <string name="onWindowFocusChanged">onWindowFocusChanged Метод позволяет определить момент получения фокуса вашим приложением.
+Метод может быть полезен, так как он срабатывает позже метода onCreate(). Например, для вычисления размеров кнопки на экране этот метод предпочтительнее, так как уже известно, что все элементы загрузились и доступны, тогда как в onCreate() могут возвратиться пустые значения ширины и высоты кнопки.</string>
+    <string name="setContentView"> setContentView. Изначально экран активности пуст. Чтобы разместить пользовательский интерфейс, необходимо вызвать метод setContentView(). У метода есть две перегруженные версии. Вы можете передать в параметре либо экземпляр компонента (View), либо идентификатор ресурса (наиболее распространённый способ).</string>
+    <string name="setFeatureDrawableResource">setFeatureDrawableResource. С помощью данного метода можно вывести значки в правой части заголовка.</string>
+    <string name="setRequestedOrientation">setRequestedOrientation. Метод позволяет программно изменить ориентацию экрана.</string>
+    <string name="startActivity">Чтобы запустить новую активность, используется метод startActivity(Intent). Этот метод принимает единственный параметр — объект Intent, описывающий активность, которая будет запускаться.</string>
+    <string name="startActivityForResult">startActivityForResult. Иногда требуется вернуть результат активности, когда она закрывается. Например, можно запустить активность, которая позволяет пользователю выбирать человека в списке контактов. При закрытии активность возвращает данные человека, который был выбран: его полное имя и телефон. В этом случае необходимо вызвать метод startActivityForResult()
+
+Метод startActivityForResult(Intent, int) со вторым параметром, идентифицирующим запрос позволяет возвращать результат. Когда дочерняя активность закрывается, то в родительской активности срабатывает метод onActivityResult(int, int, Intent), который содержит возвращённый результат, определённый в родительской активности.
+    </string>
+    <string name="setResult">Когда активность завершится, вы можете вызвать метод setResult(int), чтобы возвратить данные назад в родительскую активность (до метода finish()). Этот метод возвращает код результата закрытия активности, который может быть стандартными результатами Activity.RESULT_CANCELED, Activity.RESULT_OK или определяемым пользователем результатом RESULT_FiRST_USER (можете придумать любую константу с целочисленным значением).</string>
     <string name="btn_back">Назад </string>
 </resources>

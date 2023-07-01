@@ -46,6 +46,6 @@
         android:background="@drawable/back_blue"
         android:layout_marginStart="10sp"
         android:layout_marginEnd="10sp"
-        android:text="@string/Function"
+        android:text="@string/Methods"
         android:textSize="20sp" />
 </LinearLayout>

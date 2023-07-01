@@ -6,15 +6,15 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
-class Functions : AppCompatActivity() {
+class Methods : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_functions)
+        setContentView(R.layout.methods)
 
         val linkToUsedFunctions: TextView = findViewById(R.id.link_to_usedfunctions)
 
         linkToUsedFunctions.setOnClickListener {
-            val intent = Intent(this, UsedFunctionsActivity::class.java)
+            val intent = Intent(this, MethodsActivity::class.java)
             startActivity(intent)
         }
 
@@ -27,5 +27,6 @@ class Functions : AppCompatActivity() {
             startActivity(intent)
             overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
         }
+
     }
 }

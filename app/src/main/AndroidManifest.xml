@@ -16,10 +16,10 @@
             android:name=".ButtonAttributesActivity"
             android:exported="false" />
         <activity
-            android:name=".UsedFunctionsActivity"
+            android:name=".MethodsActivity"
             android:exported="false" />
         <activity
-            android:name=".Functions"
+            android:name=".Methods"
             android:exported="false" />
         <activity
             android:name=".Attributes"
