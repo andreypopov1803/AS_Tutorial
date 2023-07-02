@@ -48,4 +48,19 @@
         android:layout_marginEnd="10sp"
         android:text="@string/Methods"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:inputType="number"
+        android:layout_marginTop="60sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickTest"
+        android:text="Button" />
 </LinearLayout>
